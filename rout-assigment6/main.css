@@ -1,0 +1,327 @@
+* {
+  font-family: "Days One", sans-serif;
+}
+
+.navbar {
+  background-color: #0b0e13;
+  z-index: 100;
+  color: #a6a7a9;
+  border-bottom: 0.0625rem solid #181a22;
+}
+.nav_content {
+  width: 100%;
+}
+.navbar a {
+  color: #a6a7a9;
+  text-transform: capitalize;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #cbfe1c;
+}
+
+.navbar-nav a {
+  color: #a6a7a9;
+}
+.home {
+  color: #cbfe1c;
+}
+
+.btn-primary {
+  background-color: #cbfe1c;
+}
+.left_nav a {
+  font-size: 16px;
+  font-weight: 400;
+  color: RGB(11, 14, 19);
+  border: none;
+}
+
+.left_nav i:hover {
+  color: #cbfe1c;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.navbar-brand i {
+  color: #cbfe1c;
+}
+.navbar-brand p {
+  color: #cbfe1c;
+  margin-bottom: 0;
+}
+.hero_section {
+  background: url(./images/hero-bg.jpg) center/cover no-repeat;
+  height: 100vh;
+  /* color: white;   */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  /* align-content: center; */
+
+  z-index: 20;
+  color: #ffffff;
+}
+.content_left {
+  width: 50%;
+  margin: 3.125rem auto;
+}
+.content_left span {
+  color: #cbfe1c;
+}
+.btn_1 {
+  background-color: #cbfe1c;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  margin: 0.625rem 0;
+  transition: 0.3s;
+}
+.btn_1:hover {
+  background-color: #a6cd17;
+}
+.bt2_2 {
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  margin-left: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0.125rem solid #a6cd17;
+}
+.content_left h1 {
+  margin: 0.625rem 0;
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+.content_left p {
+  color: OKLCH(0.872 0.01 258.338);
+  font-size: 0.9375rem;
+  margin: 0.625rem 0;
+  width: 80%;
+}
+
+.content_right {
+  width: 50%;
+  position: relative;
+
+  font-size: 1.25rem;
+}
+.content_right h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.content_right p {
+  width: 100%;
+  color: OKLCH(0.707 0.022 261.325);
+  font-weight: 400;
+
+  font-size: 0.75rem;
+  padding: 0;
+}
+.content_right i {
+  font-size: 1.25rem;
+  color: #cbfe1c;
+}
+.content_right img {
+  height: fit-content;
+  width: 100%;
+  height: auto;
+
+  border: 0.3125rem solid #73eb61;
+  border-radius: 1.25rem;
+  max-width: 31.25rem;
+  object-fit: cover;
+}
+.after_hero {
+  width: fit-content;
+
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #0b0e13;
+  border: 0.125rem solid #364153;
+}
+.our_games {
+  background-color: #0b0e13;
+
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.our_games_header {
+  margin: 1.25rem 0;
+}
+.our_games_header p {
+  color: #cbfe1c;
+}
+.line1 {
+  width: 3.75rem;
+  height: 0.1875rem;
+  background: linear-gradient(to left, #cbfe1c, transparent);
+}
+.line2 {
+  width: 3.75rem;
+
+  height: 0.1875rem;
+  background: linear-gradient(to right, #cbfe1c, transparent);
+}
+.our_games_header + h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.carousel {
+  margin: 3.125rem;
+}
+.carousel-item img {
+  border-radius: 1.25rem;
+}
+.carousel-item {
+  min-height: 200px; /* عشان ما ينهارش */
+}
+.img-1 {
+  color: #0b0e13;
+  bottom: 0;
+}
+.game_card {
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+.game_card::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+  border-radius: 1.5625rem;
+  overflow: hidden;
+  position: absolute;
+  background: linear-gradient(to top, rgba(203, 254, 28, 0.8), transparent);
+}
+
+.game_card:hover {
+  border: 0.1875rem solid #cbfe1c;
+  border-radius: 1.375rem;
+}
+.game_card:hover::after {
+  height: 50%;
+  overflow: hidden;
+}
+
+.carousel-control-prev-icon {
+  display: none;
+}
+.view {
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  color: #cbfe1c;
+  border: 0.125rem solid #cbfe1c;
+  background-color: transparent;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.view:hover {
+  background-color: #cbfe1c;
+  color: #0b0e13;
+}
+.img-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(3.125rem);
+  transition: 0.3s ease;
+  z-index: 10;
+}
+
+.game_card:hover .img-1 {
+  transform: translateY(0);
+}
+@media (max-width: 1020px) {
+  .left_nav {
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+  .hero_section {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .content {
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .content_left,
+  .content_right {
+    width: 100%;
+
+    margin: 1rem 0;
+  }
+
+  .content_left h1 {
+    font-size: 1.875rem;
+  }
+
+  .content_right img {
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+  .content_left p {
+    width: 100%;
+  }
+  .bt2_2 {
+    margin-left: 0;
+    width: 100%;
+  }
+  .btn_1 {
+    width: 100%;
+
+    border: 0.125rem solid #73eb61;
+  }
+}
